@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.staser"
+      android:versionCode="3"
+      android:versionName="1.3.1">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".DiscGolfMainActivity"
+                  android:label="@string/app_name"                  
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>        
+        
+        <activity android:name=".TracksList"
+				  android:label="@string/track_a_title">
+			<intent-filter>
+				<action android:name="com.staser.TRACKSLIST" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".PlayersList"
+				  android:label="@string/players_a_title">
+			<intent-filter>
+				<action android:name="com.staser.PLAYERSLIST" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".GoalInfoActivity"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.staser.GOALINFOACTIVITY" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>	
+		
+		<activity android:name=".GoalSummaryActivity"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.staser.GOALSUMMARYACTIVITY" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>		
+		
+		<activity android:name=".TrackRecordsCurrentPlayers"
+		android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.staser.TRACKRECORDSCURRENTPLAYERSACTIVITY" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+    </application>
+</manifest>
+

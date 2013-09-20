@@ -1,0 +1,14 @@
+SELECT players._id as _id, player_name, game_id, sum(scorerecords.score) as total FROM scorerecords INNER JOIN players ON scorerecords.player_id = players._id INNER JOIN games ON scorerecords.game_id = games._id  GROUP BY player_name, game_id; 
+
+
+SELECT  player_name, min(total) FROM (SELECT players._id as _id, player_name, game_id, sum(scorerecords.score) as total FROM scorerecords INNER JOIN players ON scorerecords.player_id = players._id INNER JOIN games ON scorerecords.game_id = games._id  GROUP BY player_name, game_id) GROUP BY player_name;
+
+
+SELECT _id, player_name, min(total) FROM (SELECT players._id as _id, player_name, game_id, sum(scorerecords.score) as total FROM scorerecords INNER JOIN players ON  
+scorerecords.player_id = players._id INNER JOIN games ON scorerecords.game_id = games._id WHERE (SELECT COUNT(player_id) FROM gameplayers WHERE gameplayers.game_id = 4 AND  gameplayers.player_id = scorerecords.player_id ) > 0  
+GROUP BY player_name, game_id) GROUP BY player_name;
+
+
+SELECT _id, player_name, min(total) FROM (SELECT players._id as _id, player_name, game_id, sum(scorerecords.score) as total FROM scorerecords INNER JOIN players ON  
+scorerecords.player_id = players._id INNER JOIN games ON scorerecords.game_id = games._id AND games.track_id = 1 WHERE (SELECT COUNT(player_id) FROM gameplayers WHERE gameplayers.game_id = 4 AND gameplayers.player_id = scorerecords.player_id ) > 0  
+GROUP BY player_name, game_id) GROUP BY player_name;

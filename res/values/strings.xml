@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, DiscGolfMainActivity!</string>
+    <string name="main_title">Disc Golf Scoreboard</string>
+    <string name="app_name">Disc Golf Scoreboard</string>
+    
+    <!-- common dialog buttons' titles -->
+    <string name="common_ok">OK</string>
+    <string name="common_cancel">Cancel</string>
+    
+    <!-- main screen button titles -->
+    <string name="main_tracks">Tracks</string>
+    <string name="main_players">Players</string>
+    <string name="main_startgame">Start game</string>
+    <string name="main_startnewgame">Start new game</string>
+    <string name="main_resumegame">Resume game</string>
+    
+    <!-- add track dialog strings -->
+    <string name="add_track_d_title">Add new track</string>
+    <string name="add_track_d_name">Name</string>
+    <string name="add_track_d_number">Number of baskets</string>
+    <string name="add_track_d_ok">OK</string>
+    <string name="add_track_d_cancel">Cancel</string>
+    
+    <!-- tracks activity strings -->
+    <string name="track_a_title">Tracks</string>
+    <string name="track_a_mnuitem_1">Add</string>
+    
+    <!-- players activity strings -->
+    <string name="players_a_title">Players</string>
+    <string name="players_empty_list">No players were added yet to the game\'s database. 
+        Please, go to menu and select \"Add\" to add a player.</string>
+    <string name="players_empty_name_alert_content">Empty username is not allowed</string>
+    <string name="players_empty_name_alert_title">Empty username</string>
+    <string name="players_a_mnuitem_2">Start game</string>
+    
+    <!-- add player dialog strings -->    
+    <string name="add_player_d_title">Add player</string>
+    <string name="delete_player_d_title">Delete player</string>
+    
+    <!-- goal info list dialog strings -->
+    <string name="goal_info_listitem_btn_minus_txt">-</string>
+    <string name="goal_info_listitem_btn_plus_txt">+</string>
+    <string name="goal_info_listitem_mnu_reset">Reset score</string>
+    <string name="goal_info_listitem_mnu_summary">Summary</string>
+    <string name="goal_info_listitem_mnu_trackrecords">Track records (current users)</string>    
+    
+</resources>
+

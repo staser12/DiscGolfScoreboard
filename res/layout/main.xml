@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:layout_alignParentTop="true" 
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"      
+    >
+<TextView  
+	android:id="@+id/main_title_1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"    
+    android:text="@string/main_title"
+    android:gravity="center_horizontal"    
+    android:textSize="22sp"
+    android:textColor="#00FF00"
+    android:textStyle="bold"    
+    />
+
+	<ImageView		
+		android:gravity="center"
+		android:layout_gravity="center"			
+		android:src = "@drawable/freesbie"
+		android:layout_marginRight="6dp"		
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:paddingTop="5dp"
+    	android:paddingBottom="5dp"  
+ 	/> 
+ 	
+</LinearLayout>
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:layout_alignParentBottom="true" 
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    > 
+ <Button
+ 	android:id="@+id/main_btn_startnewgame"
+ 	android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="@string/main_startnewgame"
+    android:textStyle="bold"
+    android:textSize="18sp"    
+    />
+ <Button
+ 	android:id="@+id/main_btn_resumegame"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="@string/main_resumegame"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    
+    />
+</LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
